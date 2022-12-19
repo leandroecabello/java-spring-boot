@@ -1,6 +1,6 @@
 package com.demo.market.domain;
 
-public class Category {
+public class CategoryDomain {
     private int categoryId;
     private String category;
     private boolean active;

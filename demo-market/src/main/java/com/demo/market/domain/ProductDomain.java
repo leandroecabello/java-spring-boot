@@ -2,7 +2,7 @@ package com.demo.market.domain;
 
 import com.demo.market.persistence.entity.Category;
 
-public class Product {
+public class ProductDomain {
 
     private int productId;
     private String name;

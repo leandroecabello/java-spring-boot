@@ -1,16 +1,16 @@
 package com.demo.market.domain.repository;
 
-import com.demo.market.persistence.entity.Product;
+import com.demo.market.domain.ProductDomain;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface ProductRepository {
+public interface ProductDomainRepository {
 
-    List<Product> getAll();
-    Optional<List<Product>> getByCategory(int categoryId);
-    Optional<List<Product>> getScarseProducts(int quantity);
-    Optional<Product> getProduct(int productId);
-    Product save(Product product);
+    List<ProductDomain> getAll();
+    Optional<List<ProductDomain>> getByCategory(int categoryId);
+    Optional<List<ProductDomain>> getScarseProducts(int quantity);
+    Optional<ProductDomain> getProduct(int productId);
+    ProductDomain save(ProductDomain product);
     void delete(int productId);
 }

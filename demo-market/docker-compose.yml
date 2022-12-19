@@ -1,0 +1,15 @@
+version: "3.5"
+services:
+  postgres:
+    image: postgres:latest
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    container_name: demo-market
+    environment:
+      - POSTGRES_DB=demo-market
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+volumes:
+  postgres-data:
